@@ -1,0 +1,167 @@
+/* === General Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 40px;
+}
+
+/* === Header === */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+  font-size: 28px;
+}
+
+/* === Logout Button === */
+.logout-btn {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
+
+/* === Expense Form === */
+.expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.expense-form input,
+.expense-form button {
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  max-width: 250px;
+}
+
+.expense-form button {
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.expense-form button:hover {
+  background: #45a049;
+}
+
+/* === Filter and Total === */
+.filter-total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* === Chart Section === */
+.chart-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.chart-section canvas {
+  width: 400px !important;   /* Fixed width */
+  height: 250px !important;  /* Fixed height */
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+/* === Table Section === */
+.table-section {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+  .dashboard-header,
+  .filter-total-section,
+  .expense-form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .expense-form input,
+  .expense-form button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .chart-section canvas {
+    max-width: 100%;
+  }
+}
+
+/* === Links === */
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
