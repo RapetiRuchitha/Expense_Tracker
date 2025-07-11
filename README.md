@@ -35,30 +35,6 @@ This project showcases **full-stack development skills**, API integration, user 
 
 ---
 
-## 📁 Folder Structure
-
-expense-tracker-full/
-│
-├── frontend/
-│ ├── index.html
-│ ├── login.html
-│ ├── register.html
-│ ├── style.css
-│ └── script.js
-│
-├── backend/
-│ ├── models/
-│ │ ├── Expense.js
-│ │ └── User.js
-│ ├── routes/
-│ │ ├── auth.js
-│ │ └── expenses.js
-│ ├── server.js
-│ └── .env
-│
-└── README.md
-
-
 
 ## 🔐 Authentication Flow
 
