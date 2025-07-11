@@ -76,3 +76,8 @@ node server.js
 
 🌐 Frontend
 Open index.html directly in your browser or serve it using VSCode Live Server.
+
+@here are the images ...have a look
+![alt text](image.png)
+![alt text](image-3.png)
+![alt text](image-2.png)

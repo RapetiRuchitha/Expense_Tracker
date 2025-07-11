@@ -99,15 +99,13 @@ body {
 }
 
 .chart-section canvas {
-  width: 400px !important;   /* Fixed width */
-  height: 250px !important;  /* Fixed height */
+  width: 400px !important;
+  height: 250px !important;
   background: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* === Table Section === */
 .table-section {
@@ -121,10 +119,11 @@ table {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: center;
   border: 1px solid #ddd;
@@ -164,4 +163,51 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* === Login & Register Page Styles === */
+.login-page,
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f9;
+  height: 100vh;
+}
+
+.login-page .container,
+.register-page .container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-page form input,
+.register-page form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-page button,
+.register-page button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-page button:hover,
+.register-page button:hover {
+  background-color: #45a049;
 }
