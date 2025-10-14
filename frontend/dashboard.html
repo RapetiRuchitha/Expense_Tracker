@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-image: url(https://www.easyhomemeals.com/wp-content/uploads/hero-recipes.jpg);
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .buttons {
+            margin-right: 20px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .content {
+            margin-top: 50px;
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Recipe Finder</h1>
+        <div class="buttons">
+            <button onclick="navigateTo('login.html')">Login</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h4>Welcome to the Recipe Finder App! Discover thousands of recipes tailored to your taste and dietary preferences. 
+    </h4>
+    </div>
+    
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
